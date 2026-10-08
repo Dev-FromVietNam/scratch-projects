@@ -62,6 +62,7 @@ escape_html() {
 rm -rf _site
 mkdir _site
 cp -r ideas _site/ideas
+cp huong-dan.html _site/
 
 cards=""
 for slug in "${slugs[@]+"${slugs[@]}"}"; do
@@ -93,6 +94,7 @@ cat > _site/index.html <<EOF
     main { max-width: 1100px; margin: 0 auto; padding: 32px 16px; }
     h1 { margin: 0 0 4px; }
     .count, .empty { color: #59636e; }
+    .guide a { display: inline-block; margin: 8px 0 4px; padding: 10px 16px; background: #1f883d; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 600; }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
     .card { display: flex; flex-direction: column; gap: 8px; padding: 20px; background: #fff; border: 1px solid #d1d9e0; border-radius: 12px; color: inherit; text-decoration: none; transition: box-shadow .15s, transform .15s; }
     .card:hover, .card:focus-visible { box-shadow: 0 6px 18px rgba(0,0,0,.08); transform: translateY(-2px); }
@@ -103,6 +105,7 @@ cat > _site/index.html <<EOF
 <body>
   <main>
     <h1>Ý tưởng — Scratch Projects</h1>
+    <p class="guide"><a href="huong-dan.html">📘 Có ý tưởng? Xem hướng dẫn đăng lên tại đây, không cần biết code</a></p>
 $body
   </main>
 </body>

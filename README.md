@@ -2,7 +2,9 @@
 
 Nơi mọi người trong công ty chia sẻ ý tưởng nhỏ dưới dạng trang web (HTML/CSS/JS) — không cần biết lập trình, chỉ cần nhờ AI viết giúp.
 
-Xem tất cả ý tưởng tại: **https://dev-fromvietnam.github.io/scratch-projects/**
+Xem tất cả ý tưởng tại: **https://ideas.fromvietnam.jp/**
+
+📘 **Hướng dẫn từng bước có hình minh hoạ:** https://ideas.fromvietnam.jp/huong-dan.html (nội dung ở file [`huong-dan.html`](huong-dan.html)). Bên dưới là bản tóm tắt.
 
 > ⚠️ **Trang này công khai — ai trên Internet cũng xem được.** Tuyệt đối không đưa dữ liệu thật, thông tin khách hàng, mật khẩu hay API key vào.
 
@@ -49,7 +51,7 @@ Giới hạn: mỗi file tối đa 25MB, mỗi lần tải lên tối đa 100 fi
 - GitHub sẽ tự kiểm tra. Chờ dấu **✓ xanh**, sau đó người duyệt sẽ xem và merge.
 - Nếu phần kiểm tra báo đang chờ duyệt ("awaiting approval" / "waiting") mà không chạy, hãy nhắn admin để họ bấm duyệt cho lượt chạy kiểm tra.
 - Vài phút sau khi merge, ý tưởng của bạn xuất hiện tại:
-  `https://dev-fromvietnam.github.io/scratch-projects/ideas/<ten-thu-muc>/`
+  `https://ideas.fromvietnam.jp/ideas/<ten-thu-muc>/`
 
 ### Khi kiểm tra báo ✗ đỏ
 

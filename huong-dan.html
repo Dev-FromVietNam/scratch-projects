@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hướng dẫn đăng ý tưởng — Scratch Projects</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: #f5f6f8; color: #1f2328; line-height: 1.6; }
+    main { max-width: 820px; margin: 0 auto; padding: 32px 16px 64px; }
+    a { color: #0969da; }
+    h1 { margin: 8px 0 4px; line-height: 1.3; }
+    .lead { color: #59636e; margin-top: 0; }
+    .back { text-decoration: none; }
+    .map { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; margin: 24px 0; }
+    .map li { flex: 1 1 140px; background: #fff; border: 1px solid #d1d9e0; border-radius: 10px; padding: 10px 12px; font-size: .9rem; text-align: center; }
+    .map b { display: block; font-size: 1.4rem; }
+    .step { background: #fff; border: 1px solid #d1d9e0; border-radius: 12px; padding: 20px 24px; margin: 20px 0; }
+    .step h2 { display: flex; align-items: center; gap: 12px; margin: 0 0 12px; font-size: 1.25rem; }
+    .num { flex: none; width: 36px; height: 36px; border-radius: 50%; background: #1f883d; color: #fff; display: grid; place-items: center; font-size: 1rem; }
+    .step ol, .step ul { padding-left: 22px; }
+    .step li { margin: 6px 0; }
+    .note, .warn, .tip { border-radius: 8px; padding: 12px 16px; margin: 12px 0; }
+    .note { background: #ddf4ff; border-left: 4px solid #0969da; }
+    .warn { background: #fff8c5; border-left: 4px solid #bf8700; }
+    .tip { background: #dafbe1; border-left: 4px solid #1f883d; }
+    .btn { display: inline-block; padding: 2px 10px; border: 1px solid #d1d9e0; border-radius: 6px; background: #f6f8fa; font-weight: 600; font-size: .9rem; white-space: nowrap; }
+    .btn.green { background: #1f883d; border-color: #1f883d; color: #fff; }
+    code { background: #eff2f5; padding: 1px 6px; border-radius: 4px; font-size: .9em; }
+    .prompt { position: relative; }
+    .prompt pre { background: #1f2328; color: #e6edf3; padding: 16px; border-radius: 8px; white-space: pre-wrap; font-size: .9rem; margin: 0; }
+    .copy { position: absolute; top: 8px; right: 8px; cursor: pointer; border: 0; border-radius: 6px; padding: 6px 12px; background: #1f883d; color: #fff; font: inherit; font-size: .85rem; }
+    .folder { font-family: ui-monospace, monospace; background: #f6f8fa; border: 1px solid #d1d9e0; border-radius: 8px; padding: 12px 16px; white-space: pre; overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+    th, td { border: 1px solid #d1d9e0; padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #f6f8fa; }
+    .ok { color: #1f883d; font-weight: 600; }
+    .no { color: #cf222e; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="./">← Về trang chủ</a>
+    <h1>Biến ý tưởng thành trang web, không cần biết code</h1>
+    <p class="lead">AI viết code giúp bạn, bạn chỉ cần mô tả ý tưởng, lưu file và tải lên. Mất khoảng 15–30 phút cho lần đầu.</p>
+
+    <ul class="map">
+      <li><b>0</b>Tạo tài khoản GitHub</li>
+      <li><b>1</b>Nhờ AI viết</li>
+      <li><b>2</b>Lưu 3 file</li>
+      <li><b>3</b>Mở thử trên máy</li>
+      <li><b>4</b>Tải lên GitHub</li>
+      <li><b>5</b>Chờ duyệt &amp; xem</li>
+    </ul>
+
+    <div class="warn">⚠️ <b>Trang này công khai, ai trên Internet cũng xem được.</b> Chỉ dùng dữ liệu mẫu. Không đưa thông tin khách hàng, số liệu nội bộ, mật khẩu hay API key vào.</div>
+
+    <section class="step">
+      <h2><span class="num">0</span>Tạo tài khoản GitHub (chỉ làm 1 lần)</h2>
+      <ol>
+        <li>Vào <a href="https://github.com/signup" target="_blank" rel="noopener">github.com/signup</a>, đăng ký bằng email công ty.</li>
+        <li>Gửi tên tài khoản (username) cho admin để được thêm vào nhóm <code>Dev-FromVietNam</code>. Chưa được thêm vẫn tải lên được, chỉ khác một chút ở bước 4.</li>
+      </ol>
+    </section>
+
+    <section class="step">
+      <h2><span class="num">1</span>Nhờ AI viết trang</h2>
+      <ol>
+        <li>Mở <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a> hoặc <a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a>.</li>
+        <li>Bấm <span class="btn green">Sao chép</span> ở khung dưới, dán vào ô chat.</li>
+        <li>Sửa dòng <b>[Ý tưởng của tôi]</b> thành mô tả của bạn rồi gửi.</li>
+      </ol>
+      <div class="prompt">
+        <button class="copy" type="button">Sao chép</button>
+        <pre id="prompt-text">Hãy giúp tôi làm một trang web nhỏ.
+
+[Ý tưởng của tôi]: ví dụ "Máy tính lương thực nhận: nhập lương gross, hiện ra bảo hiểm, thuế, lương net."
+
+Yêu cầu bắt buộc:
+- Chỉ dùng HTML, CSS, JavaScript thuần, gồm đúng 3 file: index.html, style.css, script.js.
+- Trong index.html, nối file bằng đường dẫn tương đối: href="style.css" và src="script.js".
+- Không dùng framework, thư viện hay thứ gì phải cài đặt.
+- Không gọi API cần key hay mật khẩu. Chỉ dùng dữ liệu mẫu.
+- Có thẻ &lt;title&gt; ngắn gọn bằng tiếng Việt mô tả ý tưởng.
+- Có liên kết "← Về trang chủ" với href="../../".
+- Giao diện đẹp, dễ dùng trên cả điện thoại.
+Hãy đưa nội dung đầy đủ của từng file, mỗi file một khối code riêng.</pre>
+      </div>
+      <div class="tip">💡 <b>Mô tả càng cụ thể, kết quả càng đúng.</b> Nói rõ: ai dùng, nhập gì, bấm gì, thấy gì. Ví dụ: <i>"Nhân viên kho nhập mã đơn và cân nặng, bấm Tính, thấy phí ship theo 3 mức."</i></div>
+    </section>
+
+    <section class="step">
+      <h2><span class="num">2</span>Lưu thành 3 file trong một thư mục</h2>
+      <ol>
+        <li>Tạo một thư mục mới, ví dụ trên Desktop. Đặt tên theo quy tắc ở bảng dưới.</li>
+        <li>Với từng khối code AI đưa ra, bấm nút <b>Copy</b> trên khối đó, dán vào trình soạn thảo, rồi lưu đúng tên file.</li>
+      </ol>
+      <table>
+        <tr><th>Tên thư mục</th><th>Được không?</th></tr>
+        <tr><td><code>may-tinh-luong</code></td><td class="ok">✓ Được</td></tr>
+        <tr><td><code>lich-hop-2026</code></td><td class="ok">✓ Được</td></tr>
+        <tr><td><code>Máy tính lương</code></td><td class="no">✗ Có dấu, chữ hoa, dấu cách</td></tr>
+        <tr><td><code>may_tinh_luong</code></td><td class="no">✗ Dùng gạch dưới, phải dùng gạch ngang <code>-</code></td></tr>
+      </table>
+      <p>Kết quả phải trông như sau:</p>
+      <div class="folder">📁 may-tinh-luong
+   📄 index.html
+   📄 style.css
+   📄 script.js</div>
+
+      <p><b>Cách lưu file đúng</b> (đây là chỗ hay sai nhất):</p>
+      <ul>
+        <li><b>Windows:</b> mở <b>Notepad</b>, dán code, chọn <b>File → Save as</b>. Ở ô <b>Save as type</b> chọn <b>All files (*.*)</b>, ô <b>Encoding</b> chọn <b>UTF-8</b>, rồi gõ tên <code>index.html</code>.</li>
+        <li><b>Mac:</b> mở <b>TextEdit</b>, chọn <b>Format → Make Plain Text</b> trước khi dán. Khi lưu, gõ tên <code>index.html</code> và bỏ tick <i>"If no extension is provided, use .txt"</i>.</li>
+      </ul>
+      <div class="warn">⚠️ Nếu file bị lưu thành <code>index.html.txt</code> thì trang sẽ không chạy. Trên Windows, bật <b>View → Show → File name extensions</b> trong File Explorer để thấy đuôi file thật.</div>
+    </section>
+
+    <section class="step">
+      <h2><span class="num">3</span>Mở thử trên máy</h2>
+      <ol>
+        <li>Nhấp đúp vào <code>index.html</code>. Trang sẽ mở trong trình duyệt.</li>
+        <li>Bấm thử mọi nút, nhập thử dữ liệu.</li>
+        <li>Có gì sai hoặc muốn đổi? Quay lại khung chat với AI và nói rõ, ví dụ:
+          <ul>
+            <li><i>"Bấm nút Tính không có gì xảy ra."</i></li>
+            <li><i>"Đổi màu chủ đạo sang xanh lá, chữ to hơn."</i></li>
+            <li><i>"Trên điện thoại bảng bị tràn ra ngoài."</i></li>
+          </ul>
+          Lưu đè file mới và mở lại để kiểm tra.
+        </li>
+      </ol>
+      <div class="note">ℹ️ Trang trông không có màu sắc gì? Thường là do <code>style.css</code> lưu sai tên hoặc không nằm cùng thư mục với <code>index.html</code>.</div>
+    </section>
+
+    <section class="step">
+      <h2><span class="num">4</span>Tải lên GitHub</h2>
+      <ol>
+        <li>Đăng nhập GitHub, rồi mở link: <a href="https://github.com/Dev-FromVietNam/scratch-projects/upload/main/ideas" target="_blank" rel="noopener"><b>Tải ý tưởng lên</b></a>. Link này mở thẳng trang tải lên vào thư mục <code>ideas</code>.</li>
+        <li><b>Kéo thả CẢ THƯ MỤC</b> <code>📁 may-tinh-luong</code> vào khung <i>"Drag files here"</i>. Đừng kéo từng file lẻ.</li>
+        <li>Kiểm tra danh sách file hiện ra có dạng <code>may-tinh-luong/index.html</code>, <code>may-tinh-luong/style.css</code>…</li>
+        <li>Kéo xuống cuối trang:
+          <ul>
+            <li>Nếu thấy 2 lựa chọn: chọn <b>"Create a new branch for this commit and start a pull request"</b>, rồi bấm <span class="btn green">Propose changes</span>.</li>
+            <li>Nếu chỉ thấy nút <span class="btn green">Propose changes</span>: bấm luôn. GitHub tự tạo bản sao cho bạn, như vậy là bình thường.</li>
+          </ul>
+        </li>
+        <li>Ở trang tiếp theo, bấm <span class="btn green">Create pull request</span>, rồi bấm lại một lần nữa để xác nhận.</li>
+      </ol>
+      <div class="note">ℹ️ Giới hạn: mỗi file tối đa 25MB, mỗi lần tối đa 100 file. Ảnh thì nên nén nhỏ trước khi tải lên.</div>
+    </section>
+
+    <section class="step">
+      <h2><span class="num">5</span>Chờ duyệt và xem kết quả</h2>
+      <ol>
+        <li>GitHub tự kiểm tra trong khoảng 1 phút:
+          <ul>
+            <li><span class="ok">✓ xanh</span>: ổn, chờ người duyệt.</li>
+            <li><span class="no">✗ đỏ</span>: xem bảng dưới.</li>
+            <li>Báo <i>"awaiting approval"</i> hoặc đứng yên: nhắn admin để họ bấm cho chạy.</li>
+          </ul>
+        </li>
+        <li>Người duyệt xem code và bấm merge.</li>
+        <li>Vài phút sau, ý tưởng của bạn hiện trên <a href="./">trang chủ</a>, với địa chỉ <code>…/ideas/ten-thu-muc/</code>. Gửi link cho đồng nghiệp thôi! 🎉</li>
+      </ol>
+      <table>
+        <tr><th>Báo lỗi (bấm <b>Details</b> để xem dòng <code>LỖI</code>)</th><th>Cách sửa</th></tr>
+        <tr><td>tên chỉ được dùng chữ thường không dấu…</td><td>Đổi tên thư mục theo quy tắc ở bước 2, tải lên lại.</td></tr>
+        <tr><td>thiếu tệp index.html</td><td>Kiểm tra tên file đúng là <code>index.html</code>, không phải <code>index.html.txt</code> hay <code>Index.html</code>.</td></tr>
+        <tr><td>tệp nằm trực tiếp trong ideas/</td><td>Bạn đã kéo từng file lẻ. Hãy kéo cả thư mục.</td></tr>
+      </table>
+      <div class="tip">💡 Muốn sửa ý tưởng đã đăng? Làm lại bước 4 với <b>cùng tên thư mục</b>. GitHub sẽ ghi đè file cũ.</div>
+    </section>
+
+    <p>Bị kẹt ở bước nào? Chụp màn hình gửi admin, hoặc gửi ảnh cho AI và hỏi <i>"tôi đang làm theo hướng dẫn này, bị kẹt ở đây, làm sao?"</i></p>
+  </main>
+  <script>
+    document.querySelector('.copy').addEventListener('click', function () {
+      var btn = this;
+      navigator.clipboard.writeText(document.getElementById('prompt-text').textContent).then(function () {
+        btn.textContent = 'Đã sao chép ✓';
+        setTimeout(function () { btn.textContent = 'Sao chép'; }, 2000);
+      });
+    });
+  </script>
+</body>
+</html>
